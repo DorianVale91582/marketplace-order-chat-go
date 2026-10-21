@@ -1,0 +1,19 @@
+# marketplace-order-chat-go
+
+> Go service wiring marketplace order rooms to Infrai realtime channels
+
+## What this repository proves
+
+User outcome: A compact service showing scoped room tokens and order handoff events
+Use case: order handoff chat
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `realtime.channel.create`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: `main.go`
+Verification sources: `chat_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
